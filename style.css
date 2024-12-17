@@ -1,0 +1,122 @@
+/* Umum untuk Body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed; /* Navbar tetap di atas */
+    top: 0; /* Posisi di bagian atas */
+    left: 0; /* Rata kiri */
+    right: 0; /* Rata kanan */
+    z-index: 1000; /* Menjaga navbar tetap di atas konten lain */
+    margin-bottom: 0; /* Pastikan tidak ada jarak di bawah navbar */
+}
+
+/* Menghapus padding default di container */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0; /* Pastikan padding di kiri dan kanan container di navbar hilang */
+}
+
+/* Membuat konten tidak tertutup navbar */
+body {
+    margin-top: 80px; /* Jarak dari atas halaman ke konten, sesuaikan jika perlu */
+}
+
+/* Tombol navbar (toggler) */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Sesuaikan warna border */
+}
+
+/* Memastikan navbar memiliki lebar penuh */
+.navbar-expand-lg {
+    width: 100%;
+}
+
+/* Container Daftar Produk */
+.container {
+    margin-top: 120px; /* Untuk memberi jarak dari navbar yang sudah fix */
+    padding: 20px;
+}
+
+/* Kartu Produk */
+.card {
+    border: none; /* Menghilangkan border default */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.card-img-top {
+    border-radius: 10px; /* Sudut gambar juga membulat */
+    height: 350px;
+    object-fit: cover; /* Agar gambar tetap proporsional */
+}
+
+/* Desain Kartu Body */
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Warna teks judul */
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555; /* Warna teks deskripsi */
+    margin-bottom: 15px;
+}
+
+/* Tombol Beli */
+.btn-primary {
+    background-color: #28a745; /* Warna tombol hijau */
+    border-color: #28a745;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat hover */
+    border-color: #218838;
+}
+
+/* Responsif untuk Produk */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px; /* Mengurangi ukuran gambar pada layar kecil */
+    }
+    .card-body {
+        padding: 10px; /* Mengurangi padding di dalam kartu */
+    }
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Styling untuk navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #28a745; /* Warna hijau untuk link aktif/hover */
+}
